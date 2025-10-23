@@ -107,3 +107,34 @@ footer button:hover {
   background-color: #1ae000;
 }
 
+ /* cambio pa celular  */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .catalogo {
+    grid-template-columns: 1fr; /* apila los juegos uno debajo del otro */
+    gap: 15px;
+  }
+
+  .juego img {
+    width: 100%; /* ocupa todo el ancho disponible */
+    max-width: 220px; /* opcional, para que no sea gigante */
+  }
+
+  .oferta-juego img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .oferta p, .oferta small {
+    font-size: 0.9rem;
+  }
+}
+
