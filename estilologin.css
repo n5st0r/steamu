@@ -67,3 +67,36 @@ button:hover {
 .switch-form:hover {
   color: #3cff00;
 }
+
+/*  celular */
+@media (max-width: 500px) {
+  body {
+    height: auto; 
+    padding: 20px;
+    display: block; 
+  }
+
+  .container {
+    width: 100%; 
+    max-width: 350px; 
+    padding: 20px;
+  }
+
+  h1#formTitle {
+    font-size: 1.5em;
+  }
+
+  input {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .switch-form {
+    font-size: 0.8em;
+  }
+}
