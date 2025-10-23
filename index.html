@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido a Steamu</title>
+  <link rel="stylesheet" href="estilologin.css"
+</head>
+<body>
+  <div class="container">
+    <h1 id="formTitle">Bienvenido a Steamu</h1>
+
+    <form id="seccion">
+      <input type="text" id="loginUser" placeholder="Usuario" required>
+      <input type="password" id="loginPass" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+
+    <form id="crear" style="display:none;">
+      <input type="text" id="regUser" placeholder="Usuario" required>
+      <input type="email" id="regEmail" placeholder="Correo" required>
+      <input type="password" id="regPass" placeholder="Contraseña" required>
+      <button type="submit">Crear Cuenta</button>
+    </form>
+
+    <div class="switch-form" id="toggleForm">¿No tienes cuenta? Crear una</div>
+    <button id="translateBtn">English</button>
+  </div>
+  <script src="funcionlogin.js"></script>
+</body>
+</html>
