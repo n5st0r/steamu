@@ -3,7 +3,7 @@ const registerForm = document.getElementById("crear");
 const toggleForm = document.getElementById("toggleForm");
 const formTitle = document.getElementById("formTitle");
 
-// Cambiar entre login y crear cuenta
+// cambio  entre login y crear cuenta
 toggleForm.addEventListener("click", () => {
   if (loginForm.style.display !== "none") {
     loginForm.style.display = "none";
@@ -18,7 +18,7 @@ toggleForm.addEventListener("click", () => {
   }
 });
 
-// Enviar login
+// Enviar  a login
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const user = document.getElementById("loginUser").value;
@@ -33,7 +33,7 @@ loginForm.addEventListener("submit", (e) => {
 }
 });
 
-// Enviar registro
+// Enviar a crear cuenta 
 registerForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const user = document.getElementById("regUser").value;
@@ -43,7 +43,7 @@ registerForm.addEventListener("submit", (e) => {
     return;
   }
 
-  // Guardar usuario en localStorage
+  // aqui se guarda los datos de crear cuenta
   localStorage.setItem("usuarioGuardado", user);
   alert("Cuenta creada con éxito para " + user + "!");
 
@@ -64,7 +64,7 @@ let isEnglish = false;
 
 translateBtn.addEventListener("click", () => {
   if (!isEnglish) {
-    // Traducir al inglés
+    // traduccion al ingles xd 
     formTitle.textContent = "Welcome to Steamu";
     document.getElementById("loginUser").placeholder = "Username";
     document.getElementById("loginPass").placeholder = "Password";
@@ -82,7 +82,7 @@ translateBtn.addEventListener("click", () => {
     translateBtn.textContent = "Español";
     isEnglish = true;
   } else {
-    // Volver al español
+    // traduccion español xd
     formTitle.textContent = loginForm.style.display !== "none"
       ? "Bienvenido a Steamu"
       : "Crear Cuenta";
