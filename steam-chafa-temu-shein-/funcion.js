@@ -1,23 +1,23 @@
-let enIngles = false;
-let carrito = [];
+let enIngles = false; 7// para el ididoma 
+let carrito = []; //  aqui se guardan los juegos seleccionados 
 
 const botonesAgregar = document.querySelectorAll(".agregar");
 const botonCarrito = document.getElementById("carrito");
 const botonComprar = document.getElementById("comprar");
 const botonTraducir = document.getElementById("traducir_pagina");
-
+// funcion de  agregar el carro
 function agregarAlCarrito(event) {
   const juegoSeleccionado = event.target.parentElement.querySelector("h2").textContent;
   carrito.push(juegoSeleccionado);
   alert(enIngles ? "You have added " + juegoSeleccionado + " to your cart" : "Has agregado " + juegoSeleccionado + " al carrito");
 }
-
+//funcion de mostrar el carro 
 function mostrarCarrito() {
   if (carrito.length === 0) {
     alert(enIngles ? "The cart is empty" : "El carrito está vacío");
     return;
   }
-
+// traduccion
   let mensaje = enIngles ? "Games in your cart:\n" : "Juegos en tu carrito:\n";
   carrito.forEach((juego, index) => {
     mensaje += `${index + 1}. ${juego}\n`;
@@ -36,7 +36,7 @@ function mostrarCarrito() {
     }
   }
 }
-
+// funcion de comprar 
 function comprar() {
   if (carrito.length === 0) {
     alert(enIngles ? "There are no games in the cart to buy" : "No hay juegos en el carrito para comprar");
